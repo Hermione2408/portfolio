@@ -1,5 +1,7 @@
-.container {
+.techstackcontainer {
   display: flex;
+  margin-left: 2em;
+  margin-top: 1em;
 }
 .stacks {
   display: flex;
@@ -9,7 +11,7 @@
   margin-right: 10px;
   margin-left: 10px;
 }
-img {
+.techstackcontainer img {
   height: 20px;
   width: 20px;
 }
