@@ -58,3 +58,7 @@
 .contact button:hover {
   background-color: #157347;
 }
+.contact button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

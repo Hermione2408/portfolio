@@ -19,29 +19,23 @@ export const Contact = () => {
       [category]: value,
     });
   };
-  const handleSubmit = async (e) => {
-    e.preventDefaut();
-    setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "Application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
-    setButtonText("Send");
-    let result = await response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code == 200) {
-      setStatus({ succes: true, message: "Message sent successfully" });
-    } else {
-      setStatus({
-        succes: false,
-        message: "Something went wrong, please try again later.",
-      });
+  const clickOnSend = () => {
+    if (!isButtonDisabled) {
+      window.open(
+        `mailto:hermionedadheech@gmail.com?subject=Feedback from ${
+          formDetails.firstName
+        } ${formDetails.lastName}&body=${
+          encodeURIComponent(formDetails.message) || ""
+        }`
+      );
     }
   };
-
+  const isButtonDisabled =
+    !formDetails.firstName ||
+    !formDetails.lastName ||
+    !formDetails.email ||
+    !formDetails.phone ||
+    !formDetails.message;
   return (
     <section className="contact" id="contact">
       <Container>
@@ -51,7 +45,7 @@ export const Contact = () => {
           </Col>
           <Col md={6} className="form-container">
             <h2>Get In Touch </h2>
-            <form onSubmit={handleSubmit}>
+            <form>
               <Row>
                 <Col sm={6} className="px-1">
                   <input
@@ -92,7 +86,11 @@ export const Contact = () => {
                     placeholder="Message"
                     onChange={(e) => onFormUpdate("message", e.target.value)}
                   />
-                  <button type="submit">
+                  <button
+                    disabled={isButtonDisabled }
+                    type="submit"
+                    onClick={() => clickOnSend()}
+                  >
                     <span>{buttonText}</span>
                   </button>
                 </Col>
