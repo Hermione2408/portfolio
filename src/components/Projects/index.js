@@ -16,6 +16,7 @@ export const Projects = () => {
       description:
         "As an enthusiastic and committed beginner contributor to the Keploy open source community, I have actively participated in the development and improvement of Keploy projects.",
       imgUrl: OSSimg,
+      techStack: ["Typescript", "JavaScript"],
     },
     {
       title: "Kavach",
@@ -26,6 +27,7 @@ export const Projects = () => {
       Integrated with emergency services for quick and efficient response in case of an accident.`,
       // imgUrl: kavachImg,
       imgUrl: projImg1,
+      techStack: ["JavaScript", "React", "JSON server"],
     },
     {
       title: "Aqua",
@@ -35,6 +37,7 @@ export const Projects = () => {
       Had a Role based access control (RBAC) mechanism in the app for the data collectors, supervisors, administrators and commutators.`,
       // imgUrl: aquaImg,
       imgUrl: projImg2,
+      techStack: ["JavaScript", "React"],
     },
     {
       title: "E-Conductor Bus System",
@@ -43,6 +46,7 @@ export const Projects = () => {
       Admin panel for tracking and updating buses.`,
       // imgUrl: eConductorImg,
       imgUrl: projImg3,
+      techStack: ["JavaScript", "React"],
     },
   ];
 

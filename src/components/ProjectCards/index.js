@@ -1,6 +1,12 @@
 import { Col } from "react-bootstrap";
 import "./projectCard.css";
-export const ProjectCard = ({ title, description, imgUrl, githubLink }) => {
+export const ProjectCard = ({
+  title,
+  description,
+  imgUrl,
+  githubLink,
+  techStack,
+}) => {
   return (
     <Col sm={6} md={4}>
       <a href={githubLink}>
