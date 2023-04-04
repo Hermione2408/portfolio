@@ -1,12 +1,12 @@
 import { Col, Container, Tab, Row, Nav } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCards";
-import colorSharp2 from "../assets/imgs/color-sharp2.png";
+import { ProjectCard } from "../ProjectCards";
+import colorSharp2 from "../../assets/imgs/color-sharp2.png";
 // import aquaImg from "../assets/imgs/aqua-img.png";
 // import eConductorImg from "../assets/imgs/e-conductor-img.png";
 // import kavachImg from "../assets/imgs/kavach-img.png";
-import projImg1 from "../assets/imgs/Fotor_AI.png";
-import projImg2 from "../assets/imgs/ground water ma 0 (1).png";
-import projImg3 from "../assets/imgs/istockphoto-1149099517-640x640.jpg";
+import projImg1 from "../../assets/imgs/Fotor_AI.png";
+import projImg2 from "../../assets/imgs/ground water ma 0 (1).png";
+import projImg3 from "../../assets/imgs/istockphoto-1149099517-640x640.jpg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 

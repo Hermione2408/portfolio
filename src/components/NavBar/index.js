@@ -1,9 +1,9 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { useState, useEffect } from "react";
-import logo from "../assets/imgs/icons8-sparkling-100 (1).png";
-import navIcon1 from "../assets/imgs/nav-icon1 (1).svg";
-import navIcon2 from "../assets/imgs/github-svgrepo-com.svg";
-import navIcon3 from "../assets/imgs/icons8-twitter.svg";
+import logo from "../../assets/imgs/icons8-sparkling-100 (1).png";
+import navIcon1 from "../../assets/imgs/nav-icon1 (1).svg";
+import navIcon2 from "../../assets/imgs/github-svgrepo-com.svg";
+import navIcon3 from "../../assets/imgs/icons8-twitter.svg";
 import { useNavigate, useLocation } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
@@ -84,13 +84,22 @@ export const NavBar = () => {
               <a
                 href="https://www.linkedin.com/in/hermione-dadheech/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img src={navIcon1} alt="" />
               </a>
-              <a href="https://github.com/Hermione2408" target="_blank">
+              <a
+                href="https://github.com/Hermione2408"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={navIcon2} alt="" />
               </a>
-              <a href="https://twitter.com/HermioneDadhee1" target="_blank">
+              <a
+                href="https://twitter.com/HermioneDadhee1"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={navIcon3} alt="" />
               </a>
               <button className="vvd" onClick={() => navigate("/contact")}>
