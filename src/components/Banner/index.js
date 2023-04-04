@@ -69,7 +69,7 @@ export const Banner = () => {
                       )
                     }
                   >
-                    My Resume <ArrowRightCircle size={25} />
+                    Checkout My Resume <ArrowRightCircle size={25} />
                   </button>{" "}
                 </div>
               )}
