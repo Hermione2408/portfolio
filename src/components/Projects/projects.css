@@ -1,9 +1,6 @@
 /************ Projects Css ************/
-.project {
-  padding: 120px 0;
-  z-index: -1;
-  position: relative;
-  background-color: black;
+.project{
+  padding-top:5vh;
 }
 .project h2 {
   font-size: 45px;

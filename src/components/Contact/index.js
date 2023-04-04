@@ -22,11 +22,11 @@ export const Contact = () => {
   const clickOnSend = () => {
     if (!isButtonDisabled) {
       window.open(
-        `mailto:hermionedadheech@gmail.com?subject=Feedback from ${
+        `mailto:hermionedadheech@gmail.com?subject=${
           formDetails.firstName
-        } ${formDetails.lastName}&body=${
+        } ${formDetails.lastName} wants to connect!&body=${
           encodeURIComponent(formDetails.message) || ""
-        }`
+        } `
       );
     }
   };

@@ -3,7 +3,7 @@ import "./projectCard.css";
 export const ProjectCard = ({ title, description, imgUrl, githubLink }) => {
   return (
     <Col sm={6} md={4}>
-      <a href={githubLink}>
+      <a href={githubLink} target="_blank">
         <div className="proj-imgbx">
           <img src={imgUrl} style={{ width: 519, height: 380 }} />
           <div className="proj-txtx">

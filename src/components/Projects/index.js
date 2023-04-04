@@ -47,7 +47,7 @@ export const Projects = () => {
   ];
 
   return (
-    <section className="porject" id="projects">
+    <section className="project" id="projects">
       <Container>
         <Row>
           <Col size={12}>
@@ -59,14 +59,10 @@ export const Projects = () => {
                   }
                 >
                   <h2>Projects</h2>
-                  <br />
-
                   <p>
                     I have completed several projects as a Frontend Developer.
                     Some of my recent projects are:
                   </p>
-
-                  <br />
                   <br />
 
                   <Row>
