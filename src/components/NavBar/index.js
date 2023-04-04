@@ -1,7 +1,7 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import logo from "../../assets/imgs/icons8-sparkling-100 (1).png";
-import navIcon1 from "../../assets/imgs/nav-icon1 (1).svg";
+import navIcon1 from "../../assets/imgs/nav-icon.svg";
 import navIcon2 from "../../assets/imgs/github-svgrepo-com.svg";
 import navIcon3 from "../../assets/imgs/icons8-twitter.svg";
 import { useNavigate, useLocation } from "react-router-dom";
