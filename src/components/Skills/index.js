@@ -2,11 +2,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Robot } from "react-bootstrap-icons";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import colorSharp from "../assets/imgs/color-sharp.png";
-import icon1 from "../assets/imgs/icons8-source-code-64.png";
-import icon2 from "../assets/imgs/icons8-illustrator-50.png";
-import icon3 from "../assets/imgs/icons8-test-50.png";
-
+import colorSharp from "../../assets/imgs/color-sharp.png";
+import icon1 from "../../assets/imgs/icons8-source-code-64.png";
+import icon2 from "../../assets/imgs/icons8-illustrator-50.png";
+import icon3 from "../../assets/imgs/icons8-test-50.png";
+import "./skills.css";
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
