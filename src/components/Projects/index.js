@@ -4,14 +4,22 @@ import colorSharp2 from "../../assets/imgs/color-sharp2.png";
 import projImg1 from "../../assets/imgs/Fotor_AI.png";
 import projImg2 from "../../assets/imgs/ground-water-map.png";
 import projImg3 from "../../assets/imgs/istockphoto-1149099517-640x640.jpg";
+import OSSimg from "../../assets/imgs/opensource.jpeg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import "./projects.css";
 export const Projects = () => {
   const projects = [
     {
+      title: "Open source",
+      githubLink: "https://github.com/keploy/typescript-sdk/pulls/Hermione2408",
+      description:
+        "As an enthusiastic and committed beginner contributor to the Keploy open source community, I have actively participated in the development and improvement of Keploy projects.",
+      imgUrl: OSSimg,
+    },
+    {
       title: "Kavach",
-      githubLink: "Link",
+      githubLink: "https://github.com/Hermione2408/kavach",
       description: `Allows users to report accidents easily and without hassle.
       Offers a bounty program for reporting violations of law.
       Assistance to users by identifying nearby facilities such as hospitals, police stations, and tow trucks.
@@ -21,7 +29,7 @@ export const Projects = () => {
     },
     {
       title: "Aqua",
-      githubLink: "Link",
+      githubLink: "https://github.com/Hermione2408/Aqua",
       description: `Developed a web app for hydrogeological aquifer mapping and characteristics of water using React.js, D3.js.
       Worked on the data collection, visualization and future prediction.
       Had a Role based access control (RBAC) mechanism in the app for the data collectors, supervisors, administrators and commutators.`,
@@ -30,7 +38,7 @@ export const Projects = () => {
     },
     {
       title: "E-Conductor Bus System",
-      githubLink: "Link",
+      githubLink: "",
       description: `Made a hardware plus software based model for E-conductor and continuous tracking of buses.
       Admin panel for tracking and updating buses.`,
       // imgUrl: eConductorImg,
