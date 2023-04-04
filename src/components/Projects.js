@@ -21,8 +21,8 @@ export const Projects = () => {
       Integrated with emergency services for quick and efficient response in case of an accident.`,
       // imgUrl: kavachImg,
       imgUrl: projImg1,
-
-    }, {
+    },
+    {
       title: "Aqua",
       githubLink: "Link",
       description: `Developed a web app for hydrogeological aquifer mapping and characteristics of water using React.js, D3.js.
@@ -30,7 +30,6 @@ export const Projects = () => {
       Had a Role based access control (RBAC) mechanism in the app for the data collectors, supervisors, administrators and commutators.`,
       // imgUrl: aquaImg,
       imgUrl: projImg2,
-
     },
     {
       title: "E-Conductor Bus System",
@@ -39,33 +38,37 @@ export const Projects = () => {
       Admin panel for tracking and updating buses.`,
       // imgUrl: eConductorImg,
       imgUrl: projImg3,
-
     },
-   
   ];
 
   return (
     <section className="porject" id="projects">
-    <Container>
-      <Row>
-        <Col size={12}>
-          <TrackVisibility>
-            {({ isVisible }) => (
-              <div className={isVisible ? "animate__animated animate__bounce" : ""}>
-                <h2>Projects</h2>
-                <br />
+      <Container>
+        <Row>
+          <Col size={12}>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__bounce" : ""
+                  }
+                >
+                  <h2>Projects</h2>
+                  <br />
 
-                <p>I have completed several projects as a Full-Stack Developer. Some of my recent projects are:</p>
+                  <p>
+                    I have completed several projects as a Frontend Developer.
+                    Some of my recent projects are:
+                  </p>
 
-                <br />
-                <br />
+                  <br />
+                  <br />
 
-                <Row>
-                        {projects.map((project, index) => {
-                          return <ProjectCard key={index} {...project} />;
-                        })}
-                      </Row>
-               
+                  <Row>
+                    {projects.map((project, index) => {
+                      return <ProjectCard key={index} {...project} />;
+                    })}
+                  </Row>
                 </div>
               )}
             </TrackVisibility>
