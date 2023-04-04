@@ -6,7 +6,7 @@ import colorSharp from "../../assets/imgs/color-sharp.png";
 import icon1 from "../../assets/imgs/icons8-source-code-64.png";
 import icon2 from "../../assets/imgs/icons8-illustrator-50.png";
 import icon3 from "../../assets/imgs/icons8-test-50.png";
-
+import "./skills.css";
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {

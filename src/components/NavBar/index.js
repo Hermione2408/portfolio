@@ -7,7 +7,7 @@ import navIcon3 from "../../assets/imgs/icons8-twitter.svg";
 import { useNavigate, useLocation } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-
+import "./navbar.css";
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);

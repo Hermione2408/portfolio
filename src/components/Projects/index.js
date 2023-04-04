@@ -9,7 +9,7 @@ import projImg2 from "../../assets/imgs/ground water ma 0 (1).png";
 import projImg3 from "../../assets/imgs/istockphoto-1149099517-640x640.jpg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-
+import "./projects.css";
 export const Projects = () => {
   const projects = [
     {

@@ -4,6 +4,7 @@ import TrackVisibility from "react-on-screen";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../../assets/imgs/the_starry_night-wallpaper-1920x1080-modified.png";
+import "./banner.css";
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0); //index to display
   const [isDeleting, setIsDeleting] = useState(false); //leading State
