@@ -1,6 +1,13 @@
 import { Col } from "react-bootstrap";
 import "./projectCard.css";
-export const ProjectCard = ({ title, description, imgUrl, githubLink }) => {
+import TechStack from "../TechStack";
+export const ProjectCard = ({
+  title,
+  description,
+  imgUrl,
+  githubLink,
+  techStack,
+}) => {
   return (
     <Col sm={6} md={4}>
       <a href={githubLink} target="_blank">
@@ -9,6 +16,7 @@ export const ProjectCard = ({ title, description, imgUrl, githubLink }) => {
           <div className="proj-txtx">
             <h4>{title}</h4>
             <span>{description}</span>
+            <TechStack data={techStack} />
           </div>
         </div>
       </a>
