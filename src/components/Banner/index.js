@@ -10,7 +10,7 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false); //leading State
   const toRotate = ["Web Developer", "Learner", "UI/UX Designer"];
   const [text, setText] = useState(""); //portion that is displayed;
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [delta, setDelta] = useState(100 - Math.random() * 100);
   const period = 1000; //time period after each word
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -36,7 +36,7 @@ export const Banner = () => {
     } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
-      setDelta(500);
+      setDelta(100);
     }
   };
 
@@ -54,7 +54,9 @@ export const Banner = () => {
                 >
                   <span className="tagline">Welcome to my portfolio</span>
                   <h1>{`Hi I'm Hermione `}</h1>
+                  <div style={{height: '5vh'}}>
                   <h3 className="wrap">{text} </h3>
+                  </div>
                   <p>
                     I enjoy solving complex problems and creating efficient,
                     scalable code that delivers a great user experience. Whether
