@@ -32,7 +32,7 @@ export const Footer = () => {
                 <img src={navIcon3} alt="" />
               </a>
             </div>
-            <p>Copyright 2023. All Rights Reserved</p>
+            {/* <p>Copyright 2023. All Rights Reserved</p> */}
           </Col>
         </div>
       </Container>

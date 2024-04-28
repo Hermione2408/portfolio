@@ -1,0 +1,27 @@
+body {
+    background-color: #2e3537;
+  }
+  
+  .star {
+    position: fixed;
+    pointer-events: none;
+    color: #add8e6; /* Light bluish color */
+  }
+  
+  .star:before, .star:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '✦'; /* You can change this symbol */
+    font-size: 9px;
+  }
+  
+  .star:before {
+    color: transparent;
+    text-shadow: 0 0 6px rgba(173, 216, 230, 0.7); /* Bluish glow */
+  }
+  
+  .star:after {
+    color: rgba(173, 216, 230, 0.9); /* Bluish color */
+  }
+  

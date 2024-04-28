@@ -6,6 +6,7 @@
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: calc(100vh );
 }
 .banner .tagline {
   font-weight: 700;
@@ -22,20 +23,19 @@
   margin-bottom: 16px;
   display: inline-block;
 }
-.banner h1 {
-  font-size: 65px;
+/* .banner h1 {
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
-  margin-bottom: 20px;
   display: block;
-}
+} */
 .banner p {
   color: #b8b8b8;
-  font-size: 18px;
+  /* font-size: 18px; */
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  width: 96%;
+  width: 75%;
+  /* text-align: center; */
 }
 .img-container {
   display: block;
@@ -47,7 +47,7 @@
     display: none;
   }
 }
-.banner button {
+/* .banner button {
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
@@ -77,10 +77,27 @@
 }
 .banner button:hover svg {
   margin-left: 25px;
-}
+} */
 
+.glow-btn {
+  color: white;
+  padding: 10px 40px;
+  border: 1px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  /* letter-spacing: 2px; */
+  /* font-size: 25px; */
+  
+  &:hover {
+    transition: all 1s;
+    background: #0C2C57;
+    box-shadow: 0 0 5px #f7f7a5, 0 0 25px #f7f7a5, 0 0 50px #f7f7a5, 0 0 100px #f7f7a5;
+    border:0;
+  }
+  
+}
 .banner img {
-  animation: updown 3s linear infinite;
+  /* animation: updown 3s linear infinite; */
 }
 @keyframes updown {
   0% {
@@ -95,4 +112,99 @@
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
+}
+.stars, .twinkling{
+	position:absolute;
+	display:block;
+	top:0; bottom:0;
+	left:0; right:0;
+	width:100%; height:100%;
+}
+
+.stars {
+	z-index: 0;
+	background: transparent url('https://i.ibb.co/g91MwKZ/stars.png') repeat top center;
+}
+
+/* .twinkling{
+	z-index: 1;
+	background:transparent url('https://i.ibb.co/pnJQm6V/twinkling.png') repeat top center;
+	animation: move-twink-back 200s linear infinite;
+}
+@keyframes move-twink-back {
+	from {background-position:0 0;}
+	to {background-position:-10000px 5000px;}
+} */
+.ring {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: transparent;
+}
+.ring {
+  --tw-ring-color: transparent !important; /* To remove the ring */
+}
+.ring i {
+  position: absolute;
+  inset: 0;
+  border: 2px solid #fff;
+  transition: 0.5s;
+}
+.ring i:nth-child(1) {
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animate 6s linear infinite;
+}
+.ring i:nth-child(2) {
+  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+  animation: animate 4s linear infinite;
+}
+.ring i:nth-child(3) {
+  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+  animation: animate 10s linear infinite;
+}
+.ring:hover i {
+  border: 6px solid var(--clr);
+  filter: drop-shadow(0 0 20px var(--clr));
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.btn-shine {
+  position: relative;
+  padding: 12px 0;
+  color: #ffffff;
+  background: linear-gradient(to right, #4d4d4d 0, white 50%, #4d4d4d 100%);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
 }

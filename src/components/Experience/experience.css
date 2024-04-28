@@ -1,0 +1,72 @@
+.work-experience-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #1c1c1c; /* Adjust the background color as needed */
+    
+  }
+  
+  .work-experience-card {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .work-experience-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(100%); /* Black and white filter */
+    transition: filter 0.3s ease;
+  }
+  
+  .work-experience-card:hover .work-experience-image {
+    filter: grayscale(0);
+  }
+  
+  .work-experience-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px;
+  }
+  
+  /* .work-experience-info h3,
+  .work-experience-info p {
+    margin: 0;
+  } */
+  
+  .circle-img {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%;
+    overflow: hidden;
+    background: white; /* Or any other color as the background of the icon */
+  }
+  
+  .icon-img {
+    width: auto; /* This will keep the image's aspect ratio */
+    height: 100%; /* This will fill the height of the container */
+    max-width: 100%; /* This ensures the image is not bigger than the container */
+  }
+  .vertical-timeline-element-content .vertical-timeline-element-date {
+    border: 1px solid white !important; /* Set your desired border style */
+  }
+
+  .bg-blue-box {
+    position: relative;
+  }
+  
+  .bg-blue-box::after {
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    content: "";
+    z-index: 0;
+    border-radius: 45px;
+    background: linear-gradient(71deg, #0c0a0e, #5f6fad, #0c0a0e);
+  }

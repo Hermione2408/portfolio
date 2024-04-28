@@ -1,0 +1,115 @@
+/************ Skills Css ************/
+.skill {
+  padding: 0 0 50px 0;
+  position: relative;
+}
+.skill-bx {
+  background: #000000;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: 10vh;
+}
+.skill h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+.skill p {
+  color: #b8b8b8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px 0 75px 0;
+}
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.skill-slider .item {
+  padding: 15px;
+  box-sizing: border-box;
+}
+.skill-slider .item img {
+  width: 100%;
+}
+
+.background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}
+.background-image-right {
+  top: 20%;
+  position: absolute;
+  bottom: 0;
+  width: 35%;
+  right: 0;
+  z-index: -4;
+}
+.spell{
+  padding: 60px 50px;
+}
+.spell:hover {
+  color: #fdec6e;
+  text-shadow:0px 0px 30px #fdec6e;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.achievement-bg {
+  position: absolute;
+  top: 50%; /* Adjust as needed */
+  left: 50%; /* Adjust as needed */
+  transform: translate(-50%, -50%) scale(0); /* Centers and hides the image */
+  transition: transform 0.5s ease-in-out; /* Smooth transition for scaling */
+  z-index: 10; /* Ensure it's above the cup */
+}
+
+.achievement-bg.visible {
+  transform: translate(-50%, -50%) scale(1); /* Scales the image to its normal size */
+}
+
+.achievement-text {
+  position: absolute;
+  top: 55%; /* Adjust position as needed to be over the image */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Dancing Script', cursive; /* Example of a calligraphy-style font */
+  font-size: 1.5em; /* Adjust size as needed */
+  color: #463f3a; /* Color for the text */
+  z-index: 11; /* Above the background image */
+  transition: opacity 1s ease-in-out; /* Fade-in effect for the text */
+  opacity: 0; /* Starts as invisible */
+}
+
+.achievement-text.visible {
+  opacity: 1; /* Fades the text in */
+}
+.canvas-container{
+  position: relative;
+
+}
+.flex-container {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
+  gap: 20px; /* Adjust gap as needed */
+}
+
+/* Use this class for your ComputersCanvas container */
+.canvas-container {
+  width: 40vw; /* Adjust width as needed */
+  align-self: start; /* Align to the top */
+  order: -1; /* Render before the flex items */
+}
+
+/* Apply this to the cards container to remove any unwanted margins */
+.cards-container {
+  display: flex;
+  gap: 20px; /* Adjust gap as needed */
+}

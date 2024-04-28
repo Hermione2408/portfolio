@@ -1,0 +1,255 @@
+.my-gradient-div {
+    background: linear-gradient(135deg, #eb3100, #ff7430, #ffffff);
+  }
+  .circular-gradient {
+    background: radial-gradient(circle at 0% 0%, #23258f, #6da1f8);
+  }
+  
+  .ts-gradient {
+    background: linear-gradient(90deg, #0cc0df, #353fc2);
+  }
+  
+  .ux-gradient {
+    background: linear-gradient(90deg, #960576, #94b9ff);
+  }
+  .text-gradient {
+    background: linear-gradient(71deg, #080509, #1a171c, #080509);
+
+
+    color: #fff; 
+  }
+  .go-gradient {
+    background: linear-gradient(90deg, #3fc3ba, #006083);
+  }
+  
+  .white-gray-gradient {
+    background: linear-gradient(180deg, #ffffff, #948c8c);
+  }
+  .python-gradient {
+    background: linear-gradient(90deg, #ffffff, #cfcdcd);
+  }
+  .next-gradient {
+    background: linear-gradient(135deg, #0e0d0d, #5e5d5e);
+  }
+  
+  .js-gradient {
+    background: radial-gradient(circle at 0% 0%, #ffe71f, #efe4c3);
+  }
+  .react-gradient{
+    background: linear-gradient(90deg, #0a1c2e 0%, #2d1796 100%);
+  }
+  .center-narrative {
+    background: linear-gradient(145deg, #1c1b3a, #0f0e24);
+    box-shadow: inset 6px 6px 16px #0b0a1f, 
+                inset -6px -6px 16px #2d2b55;
+    color: #e6e6e6;
+    
+  }
+  
+  .center-narrative strong {
+    font-weight: 600;
+  }
+  .skillpage{
+    background: #040f25;
+  }
+  .center-narrative .divider {
+    display: inline-block;
+    height: 100%;
+    border-left: 2px solid #e6e6e6;
+    margin: 0 10px;
+  }
+  .body-color{
+	background:#04061F;
+}
+
+.moving-border {
+  position: relative;
+  padding: 2px; /* This will be the width of the moving border */
+  background: linear-gradient(45deg, #fffb00,#ffffff, #002bff, #7a00ff);
+  background-size: 200% 200%;
+  animation: borderAnimation 10s linear infinite;
+  border-radius: 10px;
+  display: inline-block; /* or 'block' depending on your layout */
+}
+
+
+
+@keyframes borderAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.card{
+  position: relative;
+  border: 2px solid transparent;
+  background: linear-gradient(71deg, #080509, #1a171c, #080509);
+  background-clip: padding-box;
+}
+  
+.bg-blue-box {
+  position: relative;
+}
+
+.bg-blue-box::after {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  content: "";
+  z-index: 0;
+  border-radius: 45px;
+  background: linear-gradient(71deg, #0c0a0e, #5f6fad, #0c0a0e);
+}
+/*   background: linear-gradient(71deg, #fef08a, #ca8a04, );
+ */
+.container-card {
+  position: relative;
+  border: 2px solid transparent;
+  background: linear-gradient(71deg, #080509, #1a171c, #080509);
+  background-clip: padding-box;
+  border-radius: 45px;
+  padding-top: 120px;
+  z-index: 2;
+  img {
+    margin-bottom: 32px;
+  }
+}
+.profile-circle {
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Adjust size as needed */
+  border-radius: 50%; /* Makes it round */
+  overflow: hidden; /* Ensures the image doesn’t escape the circular bounds */
+  border: 5px solid #f7e46a; /* Adjust border size and color as needed */
+  box-shadow: 0 0 0 3px #fef08a, 0 0 0 2px #ffffff;
+  position: absolute; /* Position it over the card */
+  top: -45px; /* Half of height to pull it out of the container */
+  left: calc(50% - 75px); /* Centers the circle */
+  z-index: 3; /* Ensure it's above the .container-card */
+  background-color: white; /* Background color of the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-circle img {
+  width: 100%; /* Ensure the image covers the entire circle */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* button  */
+
+.animated-button {
+	position: relative;
+	padding: 15px 25px;
+  /* background: rgba(217, 217, 217, 0.1); */
+  /* border: 2px solid #daaa30; */
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+	color: white;
+	text-decoration: none;
+	/* text-transform: uppercase; */
+  border-radius: 45px;
+	/* letter-spacing: 4px;
+	font: 700 30px 'Consolas', monospace; */
+	overflow: hidden;
+    margin-top: 20px; /* Adjust as needed */
+    margin-left: 25px;
+    display: inline-block; /* Adjust as needed */
+}
+.animatedButtonContainer a:hover{
+  color: white;
+
+}
+.animated-button span:nth-child(1),
+.animated-button span:nth-child(2),
+.animated-button span:nth-child(3),
+.animated-button span:nth-child(4) {
+  text-decoration: none;
+  color:#ffffff;
+	position: absolute;
+	background: linear-gradient(to right, #171618, #daaa30);
+	box-shadow: 0 0 5px #daaa30, 0 0 15px #daaa30, 0 0 30px #daaa30, 0 0 60px #daaa30;
+	opacity: 0;
+	transition: 1s;
+}
+
+.animated-button:hover span:nth-child(1) {
+	opacity: 1;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	animation: animate1 1s linear infinite;
+}
+
+.animated-button:hover span:nth-child(2) {
+	opacity: 1;
+	top: -100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	animation: animate2 1s linear infinite;
+	animation-delay: 0.5s;
+}
+
+.animated-button:hover span:nth-child(3) {
+	opacity: 1;
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	animation: animate3 1s linear infinite;
+}
+
+.animated-button:hover span:nth-child(4) {
+	opacity: 1;
+	bottom: -100%;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	animation: animate4 1s linear infinite;
+	animation-delay: 0.5s;
+}
+
+@keyframes animate1 {
+	0% {
+		left: -100%;
+	}
+	50%, 100% {
+		left: 100%;
+	}
+}
+
+@keyframes animate2 {
+	0% {
+		top: -100%;
+	}
+	50%, 100% {
+		top: 100%;
+	}
+}
+
+@keyframes animate3 {
+	0% {
+		right: -100%;
+	}
+	50%, 100% {
+		right: 100%;
+	}
+}
+
+@keyframes animate4 {
+	0% {
+		bottom: -100%;
+	}
+	50%, 100% {
+		bottom: 100%;
+	}
+}

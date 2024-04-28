@@ -1,0 +1,11 @@
+Model Information:
+* title:	Triwizard Cup
+* source:	https://sketchfab.com/3d-models/triwizard-cup-419396578e9f4165b38252ddec0b77c9
+* author:	pixeldog4ever (https://sketchfab.com/pixeldog4ever)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Triwizard Cup" (https://sketchfab.com/3d-models/triwizard-cup-419396578e9f4165b38252ddec0b77c9) by pixeldog4ever (https://sketchfab.com/pixeldog4ever) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

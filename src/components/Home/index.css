@@ -1,0 +1,9 @@
+.sparkle {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #add8e6; /* Light blue color */
+    box-shadow: 0 0 8px #add8e6; /* Bluish glow */
+    pointer-events: none; /* Ignore the sparkle in mouse events */
+    position: absolute;
+  }

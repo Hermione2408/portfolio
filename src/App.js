@@ -5,11 +5,14 @@ import { Footer } from "./components/Footer/index";
 import { About } from "./components/About";
 import { Home } from "./components/Home";
 import { Contact } from "./components/Contact";
+import { Spotlight } from "./components/Spotlight";
+import { SpotlightProvider } from "./utils/SpotlightContext";
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+       <SpotlightProvider>
+       <BrowserRouter>
         <NavBar />
         <Routes>
           <Route path="/">
@@ -19,6 +22,9 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
+      <Spotlight /> 
+       </SpotlightProvider>
+
     </div>
   );
 }

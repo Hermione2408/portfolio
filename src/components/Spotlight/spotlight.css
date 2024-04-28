@@ -1,0 +1,18 @@
+/* spotlight.css */
+.spotlight {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    pointer-events: none;
+    background: transparent;
+  }
+  
+  .spotlight-effect {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 20%, transparent 50%);
+    pointer-events: none;
+    mix-blend-mode: screen;
+  }
+  
